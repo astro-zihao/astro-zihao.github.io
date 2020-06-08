@@ -1,0 +1,91 @@
+# - title: "Cross-Modal Knowledge Reasoning for Knowledge-based Visual Question Answering"
+#   date: "Under review"
+#   imgurl: "/images/projects/2020/pr2020_memory.png"
+#   imgprop: "frame"
+#   selected: true
+#   has_equal_contribution: false
+#   authors:
+#     - name: <strong>Zihao Zhu</strong>
+#       url: "http://astro-zihao.github.io"
+#     - name: Jing yu
+#       url: ""
+#     - name: Yujing Wang
+#       url: ""
+#     - name: Yajing Sun
+#       url: ""
+#     - name: Yue Hu
+#       url: ""
+#     - name: Qi Wu
+#       url: "http://www.qi-wu.me"
+#   publisher: "Pattern Recognition"
+#   place: ""
+#   desc: "Under review..."
+#   tags:
+#     # - name: "arXiv"
+#     #   url: "https://arxiv.org/abs/1807.10221"
+#     - name: "pdf"
+#       url: "/pdf/"
+#     - name: "code"
+#       url: "https://github.com/astro-zihao/mucko"
+
+- title: "Mucko: Multi-Layer Cross-Modal Knowledge Reasoning for Fact-based Visual Question Answering"
+  date: "Apr. 2020"
+  imgurl: "/images/projects/2020/ijcai2020_mucko.png"
+  imgprop: "frame"
+  selected: true
+  has_equal_contribution: false
+  authors:
+    - name: <strong>Zihao Zhu</strong>
+      url: "http://astro-zihao.github.io"
+    - name: Jing yu
+      url: ""
+    - name: Yujing Wang
+      url: ""
+    - name: Yajing Sun
+      url: ""
+    - name: Yue Hu
+      url: ""
+    - name: Qi Wu
+      url: "http://www.qi-wu.me"
+  publisher: "IJCAI 2020"
+  place: "in Yokohama, Japan"
+  desc: "Fact-based Visual Question Answering (FVQA) requires external knowledge beyond visible content to answer questions about an image. How to capture the question-oriented and information-complementary evidence remains a key challenge to solve the problem. In this paper, we depict an image by a multi-modal heterogeneous graph, which contains multiple layers of information corresponding to the visual, semantic and factual features and we proposed a modality-aware heterogeneous graph convolutional network to capture evidence from different layers that is most relevant to the given question."
+  tags:
+    # - name: "arXiv"
+    #   url: "https://arxiv.org/abs/1807.10221"
+    - name: "pdf"
+      url: "/pdf/"
+    - name: "code"
+      url: "https://github.com/astro-zihao/mucko"
+
+- title: "DAM: Deliberation, Abandon and Memory Networks for Generating Detailed and Non-repetitive Responses in Visual Dialogue"
+  date: "Apr. 2020"
+  imgurl: "/images/projects/2020/ijcai2020_dam.png"
+  imgprop: "frame"
+  selected: true
+  has_equal_contribution: false
+  authors:
+    - name: Xiaoze Jiang
+      url: ""
+    - name: Jing yu
+      url: "http://mmlab-iie.github.io"
+    - name: Yajing Sun
+      url: ""
+    - name: Zengchang Qin
+      url: ""
+    - name: <strong>Zihao Zhu</strong>
+      url: "http://astro-zihao.github.io"
+    - name: Yue Hu
+      url: ""
+    - name: Qi Wu
+      url: "http://www.qi-wu.me"
+  publisher: "IJCAI 2020"
+  place: "in Yokohama, Japan"
+  desc: "In this paper, "
+  tags:
+    # - name: "arXiv"
+    #   url: "https://arxiv.org/abs/1807.10221"
+    - name: "pdf"
+      url: "/pdf/"
+    - name: "code"
+      url: "https://github.com/"

@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /about/
+Disallow: /news/
+Disallow: /patents/
+Disallow: /publications/
+Disallow: /timeline/
+
+Sitemap: https://astro-zihao.github.io/sitemap.xml

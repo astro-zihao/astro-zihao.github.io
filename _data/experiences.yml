@@ -1,0 +1,28 @@
+- date: "July. 2019 - "
+  title: "Master Student @ <a href='http://mmlab-iie.github.io'>MMLab</a>, IIE, CAS"
+  desc: "Vision and Language"
+  host:
+    name: "<a href='http://mmlab-iie.github.io'>Dr. Jing Yu</a>"
+    role: "Supervisor"
+  brief: true
+
+- date: "Sept. 2018 - June. 2019"
+  title: "Master Student @ <a href='http://ucas.ac.cn'>UCAS</a>"
+  desc: "Artificial Intelligence"
+  host: false
+  brief: true
+
+- date: "Oct. 2017 - July 2018"
+  title: "Intern @ NELIST, IIE"
+  desc: "Graph Learning"
+  host:
+    name: "<a href='http://chuanzhou.online/'>Dr. Chuan Zhou</a>"
+    role: "Supervisor"
+  brief: true
+
+- date: "Sept. 2014 - June 2018"
+  title: "Undergraduate student @ CUMT"
+  desc: "B.Eng in Computer Science and Technology"
+  host: false
+  brief: true
+

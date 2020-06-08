@@ -1,0 +1,46 @@
+# Site settings
+title: Zihao Zhu
+description:
+  en: "This is an academic website for Zihao Zhu to share his experiences, projects, publications and tech/non-tech posts. Zihao is a master student at Chinese Academy of Sciences (CAS). His research interests lie in the field of Machine Learning and Computer Vison."
+  cn: "这是朱梓豪的个人学术主页，用于分享他的个人经历，项目，学术论文，技术相关/不相关的博客。"
+keywords:
+  en: "Zihao Zhu,Publications,Posts,Research,Deep Learning,Computer Vision,Natural Language Processing"
+  cn: "朱梓豪,学术论文,博客,研究,深度学习,计算机视觉,自然语言处理,视觉问答,多模态"
+background: /images/background/background-galaxy.jpg
+deep_background: /images/background/background-galaxy.jpg
+
+baseurl: ""
+# the subpath of your site, e.g. /blog/
+url: "https://astro-zihao.github.io"
+# the base hostname & protocol for your sit
+
+# Paginationœ
+paginate: 6
+paginate_path: "/posts/page/:num/"
+
+# Build settings
+markdown: kramdown
+
+# permalink setting
+permalink: pretty
+# highlighter: rouge
+highlighter: rouge
+
+# Social media link for the site
+social:
+  twitter: citations
+  github: astro-zihao
+  facebook: 
+  linkedin:
+
+
+# customized document resources
+collections:
+  projects:
+    output: true
+
+scss:
+  sass_dir: _scss
+  style: :compressed
+
+plugins: ["jekyll-paginate", "jekyll/scholar", "jekyll-sitemap"]

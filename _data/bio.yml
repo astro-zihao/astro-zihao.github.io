@@ -1,0 +1,17 @@
+name:       "Zihao Zhu"
+title:      "M.S. Student [at] IIE, CAS"
+email:      "email: zhuzihao[at]iie.ac.cn"
+head_pic:   /images/self-portrait/me.jpg
+deep_pic:   /images/self-portrait/me.jpg
+normal:
+  date:     "Sept. 2019"
+  title:    ""
+  content:  "I'm a second-year Master student at Institute of Information Engineering (<strong>IIE</strong>), Chinese Academy of Sciences (<strong>CAS</strong>), supervised by <a href='https://mmlab-iie.github.io'>Prof. Jing Yu</a>. I'm also lucky to have opportunities to collaborate with <a href='http://www.qi-wu.me/home.html'>Qi Wu</a> (University of Adelaide), <a href='https://dblp.org/pers/w/Wang:Yujing.html'>Yujing Wang</a> (MSRA) and <a href='http://www.chuanzhou.online'/>Chuan Zhou</a> (AMSS, CAS). Before this, I got my Bachelor's degree from <strong>China University of Mining and Technology</strong> (2014-2018). [ <a href='/pdf/ZihaoZhu-CV.pdf'><strong>Résumé</strong></a> ]
+  <br>
+  <h3><strong>Research Highlight:</strong></h3> 
+  My primary research interest is Multimodal Machine Learning. Specifically, my current research focuses on <strong>vision and language</strong>, e.g. visual/video question answering, visual dialog, image/video captioning, and visual grounding. 
+  "
+short:
+  date:
+  title:  "Deep Learner"
+  content: "I am passionate with Machine Learning, Computer Vision as well as Natural Language Processing."

@@ -1,487 +1,155 @@
-<!DOCTYPE html>
-<html lang="en">
+---
+layout: home
+---
 
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<!-- about me -->
+<div id="bio" class="bio">
+  <h1 class="md-heading text-center">
+    <i class="fa fa-id-card" aria-hidden="true"></i>
+    Biography
+  </h1>
+  <div class="bio-body">
+    <p> {{ site.data.bio.normal.content }} </p>
+  </div>
+</div>
 
-    <title>Zihao Zhu</title>
+<!-- news -->
+<div id="news" class="bio">
+  <h1 class="md-heading text-center">
+    <i class="fa fa-newspaper-o" aria-hidden="true"></i>
+    News
+  </h1>
+  <div class="bio-body">
+    <div class="pat-list">
+      <ul>
+        {% for new in site.data.news %}
+        {% if new.selected %}
+        <div class="pat">
+          <div class="pat-right">
+            <li>
+              <strong>[{{ new.date }}]</strong>
+              {{ new.title }}
+            </li>
 
-    <meta name="author" content="Zihao Zhu" />
-    <!-- <meta name="viewport" content="width=750px"> -->
+          </div>
+          {% endif %}
+          {% endfor %}
+        </div>
+      </ul>
+    </div>
+  </div>
+</div>
 
-    <link rel="stylesheet" type="text/css" href="stylesheet.css" />
-    <script type="text/javascript" src="jquery.js"></script>
-    <link rel="icon" type="image/png" href="images/head.png" />
-    <script>
-var _hmt = _hmt || [];
-(function() {
-  var hm = document.createElement("script");
-  hm.src = "https://hm.baidu.com/hm.js?2c9646a8f10adcbc906e5693cc7c215d";
-  var s = document.getElementsByTagName("script")[0]; 
-  s.parentNode.insertBefore(hm, s);
-})();
-</script>
+<div class="button">
+  <h1 class="sm-heading text-center">
+    <a href="{{ '/news/#news' | prepend: site.baseurl }}">
+      <i class="fa fa-info-circle"></i> All News
+    </a>
+  </h1>
+</div>
 
-</head>
+<!-- timeline -->
+<div id="timeline" class="timeline-brief">
+  <h1 class="md-heading text-center">
+    <i class="fa fa-tasks" aria-hidden="true"></i>
+    Timeline
+  </h1>
 
-<body>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-163347198-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
+  <div class="timeline-body">
+    {% for experience in site.data.experiences %}
+    {% if experience.brief == true %}
+    <div class="timeline-item">
+      <div class="timeline-date">
+        {{ experience.date }}
+      </div>
+      <div class="timeline-title">
+        {{ experience.title }}
+      </div>
+      <div class="timeline-desc">
+        {{ experience.desc }}
+      </div>
+      {% unless experience.host == false %}
+      <div class="timeline-host">
+        {{ experience.host.role }}: {{ experience.host.name }}
+      </div>
+      {% endunless %}
+    </div>
+    {% endif %}
+    {% endfor %}
+  </div>
 
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag("js", new Date());
+  <div class="button">
+    <h1 class="sm-heading text-center">
+      <a href="{{ '/timeline/#timeline' | prepend: site.baseurl }}">
+        <i class="fa fa-info-circle"></i> More
+      </a>
+    </h1>
+  </div>
+</div>
 
-        gtag("config", "UA-163347198-1");
-    </script>
+<!-- publication -->
+<div id="publications" class="publications">
+  <h1 class="md-heading text-center">
+    <i class="fa fa-book" aria-hidden="true"></i>
+    Publications
+  </h1>
 
-    <script>
-        function displayBlock(div_id) {
-            var x = document.getElementById(div_id);
-            if (x.style.display === "none") {
-                x.style.display = "block";
-            } else {
-                x.style.display = "none";
-            }
-        }
-    </script>
+  <div class="pub-list">
+    {% for publication in site.data.publications %}
+    {% if publication.selected %}
+    <div class="pub">
+      <div class="pub-left">
+        <img class="intro-img {{publication.imgprop}}" src="{{ publication.imgurl | prepend: site.baseurl }}" />
+      </div>
+      <div class="pub-right">
+        <div class="title">
+          {{ publication.title }}
+        </div>
+        <div class="authors">
+          {% for author in publication.authors %}
+          <a class="author" href="{{author.url}}">
+            {{ author.name | prepend: ' '}}
+            {% if author.equal_contribution %}* {% endif %}
+            {% if author.equal_advising %}<sup>&#8224</sup> {% endif %}
+          </a>
+          {% if forloop.last == false %},{% endif %}
+          {% endfor %}
+        </div>
+        <div class="desc">
+          <p>{{ publication.desc }}{% if publication.has_equal_contribution %}<br>*: equal contribution {% endif %}
+            {% if publication.has_equal_advising %}<br>&#8224: equal advising {% endif %}</p>
+        </div>
+        <div class="publish">
+          <span class="publisher">{{ publication.publisher }}</span>
+          <span class="status">{{ publication.status }}</span>
+          <span class="place">{{ publication.place }}</span>
+        </div>
+        <div class="tags">
+          {% for tag in publication.tags %}
+          [<a class="tag" href="{{tag.url}}"> <strong>{{ tag.name }}</strong> </a>]
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+    {% endif %}
+    {% endfor %}
+  </div>
 
-    <script>
-        function scroll_to(div_id) {
-            const x = document.getElementById(div_id);
-            x.scrollIntoView();
-        }
-    </script>
+  <div class="button">
+    <h1 class="sm-heading text-center">
+      <a href="{{ '/publications/#publications' | prepend: site.baseurl }}">
+        <i class="fa fa-info-circle"></i> All Publications
+      </a>
+    </h1>
+  </div>
+</div>
 
-    <table style="
-        width: 750px;
-        max-width: 750px;
-        border: 0px;
-        border-spacing: 0px;
-        border-collapse: separate;
-        margin-right: auto;
-        margin-left: auto;
-      ">
-        <tbody>
-            <tr style="padding: 0px;">
-                <td style="padding: 0px;">
-                    <!-- front ---------- -->
-                    <table style="
-                width: 100%;
-                border: 0px;
-                border-spacing: 0px;
-                border-collapse: separate;
-                margin-right: auto;
-                margin-left: auto;
-              ">
-                        <tbody>
-                            <tr style="padding: 0px;">
-                                <td style="padding: 2.5%; width: 30%;">
-                                    <a href="images/profile.png"><img style="width: 90%;" alt="profile photo"
-                                            src="images/profile.png" class="hoverZoomLink" /></a>
-                                </td>
-                                <td style="padding: 2.5%; width: 70%; vertical-align: middle;">
-                                    <p style="vertical-align: middle;">
-                                        <name>
-                                            Zihao Zhu &nbsp;
-                                            <img style="vertical-align: middle;" src="images/name1.png" height="45px"
-                                                width="WIDTHpx" />
-                                        </name>
-                                    </p>
-
-                                    <p>
-                                        <font><b>M.S.&nbsp;&nbsp;Candidate</b></font> <br />
-                                        <br />
-                                        <a href="https://mmlab-iie.github.io" , target="_blank">MMLab-IIE</a><br />
-                                        Institute of Information Engineering
-                                        <a href="http://www.iie.ac.cn/" , target="_blank">(IIE)</a><br />
-                                        University of Chinese Academy of Sciences
-                                        <a href="https://www.ucas.ac.cn/" , target="_blank">(UCAS)</a><br />
-                                        Minzhuang Road No. 89, Haidian District, Beijing, China<br />
-                                        <br />
-                                        <a href="mailto:zhuzihao@iie.ac.cn">Email</a>
-                                        &nbsp/&nbsp
-                                        <a href="file/ZihaoZhu-CV.pdf">CV</a> &nbsp/&nbsp
-                                        <!-- <a href="data/DaqingLiu-bio.txt">Biography</a> &nbsp/&nbsp -->
-<!--                                         <a href="">Google Scholar</a>
-                                        &nbsp/&nbsp -->
-                                        <a href="https://github.com/astro-zihao">GitHub</a>
-                                    </p>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-
-                    <!-- bio ---------- -->
-                    <table style="
-                width: 100%;
-                border: 0px;
-                border-spacing: 0px;
-                border-collapse: separate;
-                margin-right: auto;
-                margin-left: auto;
-              ">
-                        <tbody>
-                            <tr>
-                                <td style="padding: 10px; width: 100%; vertical-align: middle;">
-                                    <heading>About Me</heading>
-                                    <p>
-                                        I'm a second-year Master student at Institute of
-                                        Information Engineering (IIE), Chinese Academy of Sciences
-                                        (CAS), supervised by
-                                        <a href="https://mmlab-iie.github.io" target="_blank">Prof. Jing Yu</a>. I'm also
-                                        lucky to have opportunities to collaborate with
-                                        <a href="http://www.qi-wu.me/home.html" , target="_blank">Qi Wu</a>
-                                        (Professor at Adelaide),
-                                        <a href="https://dblp.org/pers/w/Wang:Yujing.html">Yujing Wang</a>
-                                        (Researcher at MSRA) and
-                                        <a href="http://www.chuanzhou.online/">Chuan Zhou</a>
-                                        (Professor at AMSS, CAS). Before this, I got my Bachelor's
-                                        degree in Computer Science and Technology from China
-                                        University of Mining and Technology (2014-2018).
-                                        <br />
-                                        <br />
-                                        My primary research interest is Multi-modal Machine
-                                        Learning. Specifically, my current research focuses on
-                                        vision and language, e.g. visual/video question answering,
-                                        visual dialog, image/video captioning, and visual
-                                        grounding.
-                                    </p>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-
-                    <!-- news ---------- -->
-                    <table style="
-                width: 100%;
-                border: 0px;
-                border-spacing: 0px;
-                border-collapse: separate;
-                margin-right: auto;
-                margin-left: auto;
-              ">
-                        <tbody>
-                            <tr>
-                                <td style="padding: 10px; width: 100%; vertical-align: middle;">
-                                    <heading>News</heading>
-                                    <p>
-                                        <li>
-                                            <font color="red">
-                                                <b>[2020-04-20]</b> &nbsp; 2 paper accepted by IJCAI
-                                                2020.
-                                            </font>
-                                        </li>
-<!--                                         <li>
-                                            <font color="black">
-                                                <b>[2020-04]</b> &nbsp; 1 paper accepted
-                                                by PR.
-                                            </font>
-                                        </li> -->
-<!--                                         <li>
-                                            <font color="red">
-                                                <b>[2019-10-28]</b> &nbsp; I find the love of my life!
-                                            </font>
-                                        </li> -->
-                                        <li>
-                                            <font color="black">
-                                                <b>[2019-07]</b> &nbsp; I give a talk about Capsule Graph Neural Network
-                                                at AMSS invited by Chuan Zhou.
-                                            </font>
-                                        </li>
-                                    </p>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-
-                    <!-- Education ---------- -->
-                    <table style="
-                width: 100%;
-                border: 0px;
-                border-spacing: 0px;
-                border-collapse: separate;
-                margin-right: auto;
-                margin-left: auto;
-                margin-bottom: 0px;
-              ">
-                        <tbody>
-                            <tr>
-                                <td style="padding: 10px; width: 100%; vertical-align: middle;">
-                                    <heading>Education</heading>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-
-                    <table width="100%" align="center" border="0" cellspacing="20" cellpadding="0">
-                        <tbody>
-                            <tr>
-                                <td width="10%" style="vertical-align: middle;">
-                                    <img src="images/UCAS.png" height="HEIGHTpx" width="70" />
-                                </td>
-
-                                <td width="90%" valign="middle">
-                                    <p>
-                                        <b><a href="https://www.ucas.ac.cn/">University of Chinese Academy of
-                                                Sciences</a></b><br />
-                                        Sep. 2018 -- Present <br />
-                                        M.S. candidate in Cyberspace Security<br />
-                                        Advisors: Prof. <a href="">Jing Yu</a>
-                                    </p>
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td width="10%">
-                                    <img src="images/cumt.png" width="70" title="" style="" />
-                                </td>
-
-                                <td width="90%" valign="middle">
-                                    <p>
-                                        <b><a href="http://cumt.edu.cn/">China University of Mining and
-                                                Technology</a></b><br />
-                                        Sep. 2014 -- Jun. 2018<br />
-                                        BEng in Computer Science and Technology<br />
-
-                                    </p>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-
-                    <!-- Experience ---------- -->
-                    <!-- <table
-                        style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;margin-bottom:0px;">
-                        <tbody>
-                            <tr>
-                                <td style="padding:10px;width:100%;vertical-align:middle">
-                                    <heading>Experience</heading>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-
-                    <table width="100%" align="center" border="0" cellspacing="20" cellpadding="0">
-                        <tbody>
-                            <tr>
-                                <td width="10%" style="vertical-align:middle">
-                                    <img src='images/mreal.png' height='HEIGHTpx' width='70'>
-                                </td>
-
-                                <td width="90%" valign="middle">
-                                    <p>
-                                        <b><a href="https://www.ntu.edu.sg">Nanyang Technological University</a></b><br>
-                                        May 2018 -- May 2019<br>
-                                        Visiting Student in <a href="https://mreallab.github.io">MReaL Lab</a><br>
-                                        Advisors: Asst. Prof. <a href="http://www.ntu.edu.sg/home/hanwangzhang/">Hanwang
-                                            Zhang</a>
-                                    </p>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table> -->
-
-                    <!-- publications ---------- -->
-                    <table style="
-                width: 100%;
-                border: 0px;
-                border-spacing: 0px;
-                border-collapse: separate;
-                margin-right: auto;
-                margin-left: auto;
-              ">
-                        <tbody>
-                            <tr>
-                                <td style="padding: 10px; width: 100%; vertical-align: middle;">
-                                    <heading>Publications</heading>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <table style="
-                width: 100%;
-                border: 0px;
-                border-spacing: 0px;
-                border-collapse: separate;
-                margin-right: auto;
-                margin-left: auto;
-              ">
-                        <tbody>
-                            <!-- ijcai 2020 ---------- -->
-                            <tr>
-                                <td style="padding: 10px; width: 30%; vertical-align: middle;">
-                                    <img src="images/paper/ijcai2020_1.png" width="250" height="110"
-                                        style="border-style: none;" />
-                                </td>
-                                <td style="padding: 10px; width: 70%; vertical-align: middle;">
-                                    <papertitle>Mucko: Multi-Layer Cross-Modal Knowledge Reasoning for
-                                        Fact-based Visual Question Answering </papertitle><br />
-
-                                    <author><strong>Zihao Zhu</strong>, Jing Yu, Yujing Wang, Yajing Sun, Yue Hu
-                                        & Qi Wu</author>
-                                    <br />
-                                    IJCAI 2020 (Accept rate: 592/4717 = 12.6%)
-                                    </br>
-                                    <a>PDF</a> /
-                                    <a class="fakelink" onclick="displayBlock('tan2020learning')">bibtex</a>
-                                    <div class="bibref" id="tan2020learning" style="display: none;">
-                                        @inproceedings{zhu2020mucko,<br />
-                                        title={Mucko: Multi-Layer Cross-Modal Knowledge Reasoning for
-                                        Fact-based Visual Question Answering},<br />
-                                        author={Zhu, Zihao and Yu, Jing and Sun, Yajing and Hu, Yue and Wang, Yujing and
-                                        Wu, Qi},<br />
-                                        booktitle={International Joint Conference on Artificial
-                                        Intelligence (IJCAI)},<br />
-                                        year={2020}<br />
-                                        }
-                                    </div>
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td style="padding: 10px; width: 30%; vertical-align: middle;">
-                                    <img src="images/paper/ijcai2020_2.png" width="250" height="110"
-                                        style="border-style: none;" />
-                                </td>
-                                <td style="padding: 10px; width: 70%; vertical-align: middle;">
-                                    <papertitle>DAM: Deliberation, Abandon and Memory Networks for Generating Detailed
-                                        and Non-repetitive Responses in Visual Dialogue</papertitle><br />
-
-                                    <author>Xiaoze Jiang, Jing Yu, Yajing Sun, Zengchang Qin, <strong>Zihao Zhu</strong> & Qi Wu
-                                    </author>
-                                    <br />
-                                    IJCAI 2020 (Accept rate: 592/4717 = 12.6%)
-                                    </br>
-                                    <a>PDF</a> /
-                                    <a class="fakelink" onclick="displayBlock('jiang2020dam')">bibtex</a>
-                                    <div class="bibref" id="jiang2020dam" style="display: none;">
-                                        @inproceedings{zhu2020mucko,<br />
-                                        title={DAM: Deliberation, Abandon and Memory Networks for Generating Detailed
-                                        and Non-repetitive Responses in Visual Dialogue},<br />
-                                        author={Xiaoze Jiang, Jing Yu, Yajing Sun, Zihao Zhu & Qi
-                                        Wu},<br />
-                                        booktitle={International Joint Conference on Artificial
-                                        Intelligence (IJCAI)},<br />
-                                        year={2020}<br />
-                                        }
-                                    </div>
-                                </td>
-                            </tr>
-
-                            <!-- pr 2020 ---------- -->
-                            <!--<tr>
-                                <td style="padding: 10px; width: 30%; vertical-align: middle;">
-                                    <img src="images/paper/pr2020.png" width="250" style="border-style: none;" />
-                                </td>
-                                <td style="padding: 10px; width: 70%; vertical-align: middle;">
-                                    <papertitle>Cross-Modal Knowledge Reasoning for Knowledge-based Visual Question
-                                        Answering</papertitle><br />
-
-                                    <author>Jing Yu, <strong>Zihao Zhu*</strong>, Yujing Wang, Weifeng Zhang, & Yue
-                                        Hu</author>
-                                    <br>
-                                    * Equal Contribution
-                                    <br>
-                                    Pattern Recognition, 2020
-                                    <br />
-                                    <a href="">PDF</a> /
-                                    <a class="fakelink" onclick="displayBlock('zhou2020more')">bibtex</a>
-                                    <div class="bibref" id="zhou2020more" style="display: none;">
-
-                                    </div>
-
-                                </td>
-                            </tr>-->
-
-
-                        </tbody>
-                    </table>
-
-                    <!-- Selected Honor ---------- -->
-                    <table style="
-                width: 100%;
-                border: 0px;
-                border-spacing: 0px;
-                border-collapse: separate;
-                margin-right: auto;
-                margin-left: auto;
-              ">
-                        <tbody>
-                            <tr>
-                                <td style="padding: 10px; width: 100%; vertical-align: middle;">
-                                    <heading>Selected Honors</heading>
-                                    <p>
-                                        <li><b>Outstanding Student Scholarship</b> (Top 8% student), 2017
-                                        </li>
-                                        <li><b>Outstanding Student Scholarship</b> (Top 8% student), 2016
-                                        </li>
-                                        <li><b>China Engineering Robot Contest and International Open,
-                                            </b> Third prize, 2016
-                                        </li>
-                                        <li><b>Outstanding Student Scholarship</b> (Top 8% student), 2015
-                                        </li>
-                                    </p>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-
-                    <!-- Services ---------- -->
-                    <table style="
-                width: 100%;
-                border: 0px;
-                border-spacing: 0px;
-                border-collapse: separate;
-                margin-right: auto;
-                margin-left: auto;
-              ">
-                        <tbody>
-                            <tr>
-                                <td style="padding: 10px; width: 100%; vertical-align: middle;">
-                                    <heading>Services</heading>
-                                    <p>
-                                        Reviewer for IJCNN 2018, SDM 2018, KDD 2018, IJCAI 2020
-                                        <!-- <li>
-                                            Invited Reviewer for
-                                            <b>IEEE Transactions on Neural Networks and Learning
-                                                Systems (TNNLS)</b>
-                                        </li>
-                                        <li>
-                                            Invited Reviewer for
-                                            <b>IEEE Transactions on Multimedia (TMM)</b>
-                                        </li> -->
-                                    </p>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-
-                    <table style="
-                width: 100%;
-                border: 0px;
-                border-spacing: 0px;
-                border-collapse: separate;
-                margin-right: auto;
-                margin-left: auto;
-              ">
-                        <tbody>
-                            <tr>
-                                <td style="padding: 10px; width: 100%; vertical-align: middle;">
-                                    <br />
-                                    Website template from
-                                    <a href="https://jonbarron.info/">here</a>.
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-</body>
-
-</html>
+<div id="bio" class="bio">
+  <h1 class="md-heading text-center">
+    <!-- <i class="fa fa-id-card" aria-hidden="true"></i> -->
+    Services
+  </h1>
+  <!-- <div class="bio-body"> -->
+  <p>Reviewer for IJCNN 2018, SDM 2018, KDD 2018, IJCAI 2020</p>
+  <!-- </div> -->
+</div>

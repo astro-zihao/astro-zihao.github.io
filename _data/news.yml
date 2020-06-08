@@ -1,0 +1,27 @@
+# content:  "
+#   <strong>[Apr. 2020]</strong> One paper on visual question answering accepted to <a href='http://ijcai20.org/'>IJCAI 2020</a> in Yokohama, Japan! Check out the <a href='https://mp.weixin.qq.com/s/WE3_t2rm8J95FI-A3ohvNQ'>chinese report</a>!<br>
+#   <strong>[Apr. 2020]</strong> One paper on visual dialog accepted to <a href='http://http://ijcai20.org/'>IJCAI 2020</a> in Yokohama, Japan! Check out the <a href='https://mp.weixin.qq.com/s/j6_1ZVPpQONghkj1lWWY9Q'>chinese report</a><br>
+#   <strong>[Sep. 2019]</strong> I joined MMLab at the Institute of Information Engineering and research on VQA.
+#   <strong>[Sep. 2018]</strong> I will spend a meaningful year at the lovely UCAS in September 2018.<br>
+#   <strong>[Jun. 2018]</strong> I got the bachelor's degree of Computer Scienceas at CUMT.
+#   "
+
+- title: "One paper on visual question answering accepted to <a href='http://ijcai20.org/'>IJCAI 2020</a> in Yokohama, Japan! Check out the <a href='https://mp.weixin.qq.com/s/WE3_t2rm8J95FI-A3ohvNQ'>chinese report</a> !"
+  date: "Apr. 2020"
+  selected: true
+
+- title: "One paper on visual dialog accepted to <a href='http://http://ijcai20.org/'>IJCAI 2020</a> in Yokohama, Japan! Check out the <a href='https://mp.weixin.qq.com/s/j6_1ZVPpQONghkj1lWWY9Q'>chinese report</a>"
+  date: "Apr. 2020"
+  selected: true
+
+- title: "I joined MMLab at the Institute of Information Engineering and research on VQA."
+  date: "Sep. 2019"
+  selected: true
+
+- title: "I will spend a meaningful year at the lovely UCAS in September 2018."
+  date: "Sep. 2018"
+  selected: true
+
+- title: "I got the bachelor's degree of Computer Scienceas at CUMT."
+  date: "Jun. 2018"
+  selected: true

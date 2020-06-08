@@ -1,0 +1,28 @@
+---
+layout: page
+description: "Full patent list for Zihao"
+noindex: true
+---
+
+<div id="patents" class="patents">
+  <h1 class="lg-heading text-center">
+    <i class="fa fa-file" aria-hidden="true"></i>
+    Full News List
+  </h1>
+
+  <div class="pat-navigator"></div>
+
+  {% for new in site.data.news %}
+  <div class="pat">
+    <div class="pat-right">
+
+      <div class="places" style="font-weight: 800;color: #9b3022">[{{ new.date }}]</div>
+      <div>
+        {{ new.title }}
+      </div>
+
+    </div>
+  </div>
+  {% endfor %}
+
+</div>
