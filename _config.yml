@@ -28,10 +28,10 @@ highlighter: rouge
 
 # Social media link for the site
 social:
-  twitter: citations
+  twitter: citations?user=lBSoR4IAAAAJ&hl=en
   github: astro-zihao
   facebook: 
-  linkedin:
+  linkedin: in/zihaozhu1996/
 
 
 # customized document resources
