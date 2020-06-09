@@ -1,5 +1,3 @@
-# Tete Xiao's Homepage
-
-Special thanks go to @Hexiang Hu for his codes.
+# Zihao Zhu's Homepage
 
 Powered by [Jekyll]

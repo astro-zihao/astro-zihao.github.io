@@ -251,7 +251,7 @@ pre > code { border: 0; padding-right: 0; padding-left: 0; }
 .highlight .il { color: #099; }
 
 /** Cover */
-.cover { max-width: 55%; height: 400px; z-index: initial; margin-right: auto; margin-left: auto; padding-right: 0px; padding-left: 0px; }
+.cover { max-width: 70%; height: 400px; z-index: initial; margin-right: auto; margin-left: auto; padding-right: 0px; padding-left: 0px; }
 
 @media screen and (max-width: 800px) { .cover { max-width: -webkit-calc(1024px - (30px)); max-width: calc(1024px - (30px)); padding-right: 15px; padding-left: 15px; } }
 

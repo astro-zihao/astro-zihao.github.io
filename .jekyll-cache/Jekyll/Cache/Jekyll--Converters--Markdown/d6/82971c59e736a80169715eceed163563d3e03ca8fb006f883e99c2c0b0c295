@@ -1,0 +1,4 @@
+I"�<h1 id="nips-2014-a-multi-world-approach-to-question-answering-about-real-world-scenes-based-on-uncertain-input">【NIPS 2014】 A Multi-World Approach to Question Answering about Real-World Scenes based on Uncertain Input</h1>
+
+<p>本文是 VQA 的概念萌芽作，但此后的文章【2015 VQA Visual Question Answering】认为本文定义的问题把 answers 限制在了预定义的 16 种基础颜色和 894 种目标类别中，只算 VQA Efforts，没有真正定义 VQA。</p>
+:ET
