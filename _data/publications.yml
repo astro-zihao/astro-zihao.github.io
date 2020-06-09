@@ -55,8 +55,6 @@
     #   url: "https://arxiv.org/abs/1807.10221"
     - name: "pdf"
       url: "/pdf/"
-    - name: "code"
-      url: "https://github.com/astro-zihao/mucko"
 
 - title: "DAM: Deliberation, Abandon and Memory Networks for Generating Detailed and Non-repetitive Responses in Visual Dialogue"
   date: "Apr. 2020"
