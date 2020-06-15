@@ -1,40 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
 <url>
-<loc>https://astro-zihao.github.io/2019/08/25/vqa-recent-papers/</loc>
-<lastmod>2019-08-25T00:00:00+08:00</lastmod>
+  <loc>https://zihao-zhu.com/</loc>
+  <lastmod>2020-06-12T10:43:18+00:00</lastmod>
+  <priority>1.00</priority>
 </url>
 <url>
-<loc>https://astro-zihao.github.io/projects/holistic/</loc>
-<lastmod>2016-11-22T00:00:00+08:00</lastmod>
+  <loc>https://zihao-zhu.com/posts/</loc>
+  <lastmod>2020-06-12T10:43:18+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://astro-zihao.github.io/projects/sinn/</loc>
-<lastmod>2016-11-22T00:00:00+08:00</lastmod>
+  <loc>https://zihao-zhu.com/pdf/ZihaoZhu-CV.pdf</loc>
+  <lastmod>2020-06-12T10:43:14+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://astro-zihao.github.io/about/</loc>
+  <loc>https://zihao-zhu.com/2019/08/25/vqa-recent-papers/</loc>
+  <lastmod>2020-06-12T10:43:18+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
-<url>
-<loc>https://astro-zihao.github.io/posts/</loc>
-</url>
-<url>
-<loc>https://astro-zihao.github.io/</loc>
-</url>
-<url>
-<loc>https://astro-zihao.github.io/news/</loc>
-</url>
-<url>
-<loc>https://astro-zihao.github.io/patents/</loc>
-</url>
-<url>
-<loc>https://astro-zihao.github.io/publications/</loc>
-</url>
-<url>
-<loc>https://astro-zihao.github.io/timeline/</loc>
-</url>
-<url>
-<loc>https://astro-zihao.github.io/pdf/ZihaoZhu-CV.pdf</loc>
-<lastmod>2020-05-21T15:20:22+08:00</lastmod>
-</url>
+
+
 </urlset>
