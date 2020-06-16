@@ -5,4 +5,4 @@ Disallow: /patents/
 Disallow: /publications/
 Disallow: /timeline/
 
-Sitemap: https://astro-zihao.github.io/sitemap.xml
+Sitemap: http://localhost:4000/sitemap.xml
