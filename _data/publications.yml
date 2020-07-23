@@ -20,7 +20,7 @@
     # - name: "arXiv"
     #   url: "https://arxiv.org/abs/1807.10221"
     - name: "pdf"
-      url: "/pdf/"
+      url: "https://www.sciencedirect.com/science/article/abs/pii/S0031320320303666?via%3Dihub"
 
 - title: "Mucko: Multi-Layer Cross-Modal Knowledge Reasoning for Fact-based Visual Question Answering"
   date: "Apr. 2020"
