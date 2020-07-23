@@ -1,32 +1,26 @@
-# - title: "Cross-Modal Knowledge Reasoning for Knowledge-based Visual Question Answering"
-#   date: "Under review"
-#   imgurl: "/images/projects/2020/pr2020_memory.png"
-#   imgprop: "frame"
-#   selected: true
-#   has_equal_contribution: false
-#   authors:
-#     - name: <strong>Zihao Zhu</strong>
-#       url: "http://astro-zihao.github.io"
-#     - name: Jing yu
-#       url: ""
-#     - name: Yujing Wang
-#       url: ""
-#     - name: Yajing Sun
-#       url: ""
-#     - name: Yue Hu
-#       url: ""
-#     - name: Qi Wu
-#       url: "http://www.qi-wu.me"
-#   publisher: "Pattern Recognition"
-#   place: ""
-#   desc: "Under review..."
-#   tags:
-#     # - name: "arXiv"
-#     #   url: "https://arxiv.org/abs/1807.10221"
-#     - name: "pdf"
-#       url: "/pdf/"
-#     - name: "code"
-#       url: "https://github.com/astro-zihao/mucko"
+- title: "Cross-Modal Knowledge Reasoning for Knowledge-based Visual Question Answering"
+  date: ""
+  imgurl: "/images/projects/2020/pr2020_memory.png"
+  imgprop: "frame"
+  selected: true
+  # has_equal_contribution: true
+  authors:
+    - name: Jing yu
+      url: ""
+    - name: <strong>Zihao Zhu</strong>
+      url: ""
+    - name: Yujing Wang
+      url: ""
+    - name: Yue Hu
+      url: ""
+  publisher: "Pattern Recognition"
+  place: ""
+  desc: "Inspired by the human cognition theory, we depict an image by multiple knowledge graphs from the visual, semantic and factual views. we decompose the model into a series of memory-based reasoning steps, each performed by a Graph-based Read, Update, and Control (GRUC) module that conducts parallel reasoning over both visual and semantic information. By stacking the modules multiple times, our model performs transitive reasoning and obtains question-oriented concept representations under the constrain of different modalities."
+  tags:
+    # - name: "arXiv"
+    #   url: "https://arxiv.org/abs/1807.10221"
+    - name: "pdf"
+      url: "/pdf/"
 
 - title: "Mucko: Multi-Layer Cross-Modal Knowledge Reasoning for Fact-based Visual Question Answering"
   date: "Apr. 2020"

@@ -6,15 +6,23 @@
 #   <strong>[Jun. 2018]</strong> I got the bachelor's degree of Computer Scienceas at CUMT.
 #   "
 
-- title: "One paper on visual question answering accepted to <a href='http://ijcai20.org/'>IJCAI 2020</a> in Yokohama, Japan! Check out the <a href='https://mp.weixin.qq.com/s/WE3_t2rm8J95FI-A3ohvNQ'>chinese report</a> !"
+- title: "One paper has been accepted to Pattern Recognition! Thanks for my wonderful collaborators."
+  date: "July. 2020"
+  selected: true
+
+- title: "One paper about VQA has been accepted to the <a href='http://ijcai20.org/'>IJCAI 2020</a>! Check out the <a href='https://mp.weixin.qq.com/s/WE3_t2rm8J95FI-A3ohvNQ'>chinese report</a> !"
   date: "Apr. 2020"
   selected: true
 
-- title: "One paper on visual dialog accepted to <a href='http://http://ijcai20.org/'>IJCAI 2020</a> in Yokohama, Japan! Check out the <a href='https://mp.weixin.qq.com/s/j6_1ZVPpQONghkj1lWWY9Q'>chinese report</a>"
+- title: "One paper about visual dialog has been accepted to the <a href='http://http://ijcai20.org/'>IJCAI 2020</a>! Check out the <a href='https://mp.weixin.qq.com/s/j6_1ZVPpQONghkj1lWWY9Q'>chinese report</a>"
   date: "Apr. 2020"
   selected: true
 
-- title: "I joined MMLab at the Institute of Information Engineering and research on VQA."
+- title: "I will join MMLab at Institute of Information Engineering and do research on VQA."
+  date: "Sep. 2019"
+  selected: true
+
+- title: "I was invited to give a talk about Graph Capsule Network at AMSS, CAS."
   date: "Sep. 2019"
   selected: true
 
