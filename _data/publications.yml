@@ -1,26 +1,26 @@
-- title: "Cross-Modal Knowledge Reasoning for Knowledge-based Visual Question Answering"
-  date: ""
-  imgurl: "/images/projects/2020/pr2020_memory.png"
-  imgprop: "frame"
-  selected: true
-  # has_equal_contribution: true
-  authors:
-    - name: Jing yu
-      url: ""
-    - name: <strong>Zihao Zhu</strong>
-      url: ""
-    - name: Yujing Wang
-      url: ""
-    - name: Yue Hu
-      url: ""
-  publisher: "Pattern Recognition"
-  place: ""
-  desc: "Inspired by the human cognition theory, we depict an image by multiple knowledge graphs from the visual, semantic and factual views. we decompose the model into a series of memory-based reasoning steps, each performed by a Graph-based Read, Update, and Control (GRUC) module that conducts parallel reasoning over both visual and semantic information. By stacking the modules multiple times, our model performs transitive reasoning and obtains question-oriented concept representations under the constrain of different modalities."
-  tags:
-    # - name: "arXiv"
-    #   url: "https://arxiv.org/abs/1807.10221"
-    - name: "pdf"
-      url: "https://www.sciencedirect.com/science/article/abs/pii/S0031320320303666?via%3Dihub"
+# - title: "Cross-Modal Knowledge Reasoning for Knowledge-based Visual Question Answering"
+#   date: ""
+#   imgurl: "/images/projects/2020/pr2020_memory.png"
+#   imgprop: "frame"
+#   selected: true
+#   # has_equal_contribution: true
+#   authors:
+#     - name: Jing yu
+#       url: ""
+#     - name: <strong>Zihao Zhu</strong>
+#       url: ""
+#     - name: Yujing Wang
+#       url: ""
+#     - name: Yue Hu
+#       url: ""
+#   publisher: "Pattern Recognition"
+#   place: ""
+#   desc: "Inspired by the human cognition theory, we depict an image by multiple knowledge graphs from the visual, semantic and factual views. we decompose the model into a series of memory-based reasoning steps, each performed by a Graph-based Read, Update, and Control (GRUC) module that conducts parallel reasoning over both visual and semantic information. By stacking the modules multiple times, our model performs transitive reasoning and obtains question-oriented concept representations under the constrain of different modalities."
+#   tags:
+#     # - name: "arXiv"
+#     #   url: "https://arxiv.org/abs/1807.10221"
+#     - name: "pdf"
+#       url: "https://www.sciencedirect.com/science/article/abs/pii/S0031320320303666?via%3Dihub"
 
 - title: "Mucko: Multi-Layer Cross-Modal Knowledge Reasoning for Fact-based Visual Question Answering"
   date: "Apr. 2020"
@@ -45,12 +45,12 @@
   place: "in Yokohama, Japan"
   desc: "Fact-based Visual Question Answering (FVQA) requires external knowledge beyond visible content to answer questions about an image. How to capture the question-oriented and information-complementary evidence remains a key challenge to solve the problem. In this paper, we depict an image by a multi-modal heterogeneous graph, which contains multiple layers of information corresponding to the visual, semantic and factual features and we proposed a modality-aware heterogeneous graph convolutional network to capture evidence from different layers that is most relevant to the given question."
   tags:
-    - name: "arXiv"
-      url: "https://arxiv.org/abs/2006.09073"
+    # - name: "arXiv"
+    #   url: "https://arxiv.org/abs/2006.09073"
     - name: "pdf"
-      url: "https://www.ijcai.org/Proceedings/2020/0153.pdf"
+      url: "0153.pdf"
     - name: "code"
-      url: "https://github.com/astro-zihao/mucko"
+      url: "/pdf/mucko"
 
 - title: "DAM: Deliberation, Abandon and Memory Networks for Generating Detailed and Non-repetitive Responses in Visual Dialogue"
   date: "Apr. 2020"
@@ -62,7 +62,7 @@
     - name: Xiaoze Jiang
       url: ""
     - name: Jing yu
-      url: "http://mmlab-iie.github.io"
+      url: ""
     - name: Yajing Sun
       url: ""
     - name: Zengchang Qin
@@ -77,8 +77,8 @@
   place: "in Yokohama, Japan"
   desc: "Visual Dialogue task requires an agent to be engaged in a conversation with human about an image. The ability of generating detailed and non-repetitive responses is crucial for the agent to achieve human-like conversation. In this paper, we propose a novel generative decoding architecture to generate high-quality responses, which moves away from decoding the whole encoded semantics towards the design that advocates both transparency and flexibility."
   tags:
-    - name: "arXiv"
-      url: "https://arxiv.org/abs/"
+    # - name: "arXiv"
+    #   url: "https://arxiv.org/abs/"
     - name: "pdf"
       url: "https://www.ijcai.org/Proceedings/2020/0096.pdf"
     - name: "code"
